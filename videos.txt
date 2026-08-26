@@ -1,8 +1,6 @@
-# One video per line. Can be:
-#   - A direct HTTPS URL to a video file (must be a direct file link, not a webpage)
-#   - A relative path to a video file committed inside this repo (e.g. media/clip1.mp4)
-# Lines starting with # are ignored.
-#
-# Example:
-# https://example.com/videos/clip1.mp4
-# https://example.com/videos/clip2.mp4
+# Managed by Signal Desk. One video per line.
+# Direct video URL or a path to a file committed in this repo.
+https://mega.nz/file/kR01kRJY#jzfyDn1qYxuoTlhtTHLnWoZldRhFPEPrVuAP4L2tkqw
+https://mega.nz/file/AQlgjICQ#HlUWGPQQJC1r-mNpHWZtd9DxuVyX7_q4Imp3vwmGXjo
+https://mega.nz/file/cUUURDzI#sUTg2WDynUUVAHgJbQ3EVsFJceXIvIwVp0iWYSznlaY
+https://mega.nz/file/dJ83hZ7T#2JNCWp7-DmCxAoax2eGO5zbWQSx4R1Fxs4dngb9NgOQ
