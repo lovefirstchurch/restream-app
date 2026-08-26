@@ -1,0 +1,8 @@
+# One video per line. Can be:
+#   - A direct HTTPS URL to a video file (must be a direct file link, not a webpage)
+#   - A relative path to a video file committed inside this repo (e.g. media/clip1.mp4)
+# Lines starting with # are ignored.
+#
+# Example:
+# https://example.com/videos/clip1.mp4
+# https://example.com/videos/clip2.mp4
