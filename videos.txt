@@ -1,5 +1,3 @@
 # Managed by Signal Desk. One video per line.
 # Direct video URL or a path to a file committed in this repo.
-https://pub-0e046da81b654aceb4875487e0ebb23f.r2.dev/5%20Relationships%20with%20God%20[jiLtmY97LqQ].mp4
-https://pub-0e046da81b654aceb4875487e0ebb23f.r2.dev/3%20Things%20The%20HOLY%20SPIRIT%20Does%20In%20Your%20Life%20[DBkz4Bkr5qs].mp4
-https://pub-0e046da81b654aceb4875487e0ebb23f.r2.dev/Greater%20Love%20[iua077FPDyI].mp4
+https://pub-0e046da81b654aceb4875487e0ebb23f.r2.dev/3%20Things%20The%20HOLY%20SPIRIT%20Does%20In%20Your%20Life%20%5BDBkz4Bkr5qs%5D.mp4
