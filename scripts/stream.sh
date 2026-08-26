@@ -57,7 +57,7 @@ echo "Streaming to: $TEE_OUTPUTS"
 
 # Run just under 6 hours so the job self-terminates before GitHub kills it.
 # -stream_loop -1 loops the whole playlist indefinitely within this run.
-timeout 5h50m ffmpeg -hide_banner -loglevel warning \
+timeout-minutes:355 ffmpeg -hide_banner -loglevel warning \
   -protocol_whitelist file,http,https,tcp,tls,crypto \
   -re -f concat -safe 0 -stream_loop -1 -i "$CONCAT_FILE" \
   -c:v libx264 -preset veryfast -tune zerolatency \
