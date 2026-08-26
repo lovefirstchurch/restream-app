@@ -1,0 +1,39 @@
+name: Restream to YouTube/TikTok
+
+on:
+  schedule:
+    # Safety-net trigger every 6 hours in case the self-chaining dispatch
+    # fails for any reason. Runs are deduplicated by the concurrency group.
+    - cron: '0 */6 * * *'
+  workflow_dispatch: {}
+
+# Ensures overlapping runs queue instead of colliding, and that a manual
+# run doesn't cancel one already streaming.
+concurrency:
+  group: restream
+  cancel-in-progress: false
+
+jobs:
+  stream:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355 # just under the 6h GitHub Actions hard limit
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install ffmpeg
+        run: sudo apt-get update -y && sudo apt-get install -y ffmpeg
+
+      - name: Stream
+        env:
+          YOUTUBE_STREAM_KEY: ${{ secrets.YOUTUBE_STREAM_KEY }}
+          TIKTOK_STREAM_KEY: ${{ secrets.TIKTOK_STREAM_KEY }}
+          TIKTOK_INGEST_URL: ${{ secrets.TIKTOK_INGEST_URL }}
+        run: bash scripts/stream.sh
+
+      - name: Trigger next session
+        if: always()
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: bash scripts/trigger_next_run.sh
