@@ -1,3 +1,3 @@
 # Managed by Signal Desk. One video per line.
 # Direct video URL or a path to a file committed in this repo.
-https://github.com/lovefirstchurch/restream-app/blob/main/Intro%20New.mp4
+https://raw.githubusercontent.com/lovefirstchurch/restream-app/main/Intro%20New.mp4
